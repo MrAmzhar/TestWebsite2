@@ -185,11 +185,11 @@
 
 setInterval(function(){
 
-	$.getJSON('https://graph.facebook.com/v2.8/?ids=746029555549871&fields=reactions.type(LIKE).limit(0).summary(total_count).as(reactions_like),reactions.type(LOVE).limit(0).summary(total_count).as(reactions_love)&access_token=EAAQCpZC727isBANSN9KMYNv7uoFpMovVSZBgMbIKsahOm44TWaRWeINDE7ckMx5FV0gDgMC1SNaeWdwUVgCF6aZCedufgBqGhtEp9YzsWtn85pO6UkhLiA5xhZBzxJBGZBYuFZB8SzRrelYGcV6ipNab37GZAvEHF5Elm7yWx9q0wZDZD,function(res){
+	$.getJSON('https://graph.facebook.com/v2.8/?ids=744123132407180&fields=reactions.type(LIKE).limit(0).summary(total_count).as(reactions_like),reactions.type(LOVE).limit(0).summary(total_count).as(reactions_love)&access_token={EAAQCpZC727isBANSN9KMYNv7uoFpMovVSZBgMbIKsahOm44TWaRWeINDE7ckMx5FV0gDgMC1SNaeWdwUVgCF6aZCedufgBqGhtEp9YzsWtn85pO6UkhLiA5xhZBzxJBGZBYuFZB8SzRrelYGcV6ipNab37GZAvEHF5Elm7yWx9q0wZDZD},function(res){
 		
-		th.text(9251 + res['746029555549871'].reactions_love.summary.total_count);
+		th.text(9251 + res['744123132407180'].reactions_love.summary.total_count);
 
-		hh.text(9221 + res['746029555549871'].reactions_like.summary.total_count);
+		hh.text(9221 + res['744123132407180'].reactions_like.summary.total_count);
 
 		setInterval(function(){
 
